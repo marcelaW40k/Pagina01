@@ -15,3 +15,28 @@
         %source{src:"/videos/webm/video1.webm", typ:"video/webm"} 
     .row.full-height.middle-xs.relative.up
       .col-xs-12
+        .box.white-text
+          %img{src:""}
+          %h1.dancing-script.title.no-margin Regalos Sorpresa
+          %p#is-open
+            %i.glyphicon.glyphicon-time
+            Servicio las 24 Horas
+      %nav.fixed.top.right.navigation.white-text#navigation
+        -menu = ["Home", "Inicio", "Galeria", "Contacto", "Como llegar"]
+        %ul.list-inline
+          -menu.each do |item|
+            %li
+              %a{}= item
+      .absolute.medium.black.large-padding.bottom.white-text.full-width
+      #descrption
+        .row.middle-x
+          .col-xs-7.col-sm-6.white-text.medium
+            Atencion y servicio de excelente calidad
+          .col-xs
+            .box
+              %nav.text-right.navigation
+                %ul.list-inline
+                  -menu.each do |item|
+                    %li
+                      %a{}= item
+    .full-height  
