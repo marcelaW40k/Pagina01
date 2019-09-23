@@ -13,6 +13,10 @@ html {
   font-size: 1em;
   line-height: 1.4; }
 
+html, body {
+  height: 100%;
+  width: 100%; }
+
 /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -97,6 +101,57 @@ textarea {
 /* ==========================================================================
      Helper classes
      ========================================================================== */
+.black {
+  background-color: #221; }
+
+.white-text {
+  color: white; }
+
+.dancing-script {
+  font-family: 'Dancing-script', cursive; }
+
+.title {
+  font-size: 4em; }
+
+.mediem {
+  font-size: 1.5em; }
+
+.large-padding {
+  padding: 10px 15px; }
+
+.absolute {
+  position: absolute; }
+
+.fixed {
+  position: fixed; }
+
+.relative {
+  position: relative; }
+
+.bottom {
+  bottom: 0px; }
+
+.top {
+  top: 3em; }
+
+.right {
+  right: 5em; }
+
+.up {
+  z-index: 5; }
+
+.full-height {
+  height: 100%; }
+
+.full-width {
+  width: 100%; }
+
+.row {
+  margin: 0; }
+
+.no-margin {
+  margin: 0px; }
+
 /*
    * Hide visually and from screen readers
    */
@@ -111,6 +166,16 @@ textarea {
   *    causes content to wrap 1 word per line:
   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
   */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);

@@ -21,18 +21,19 @@
           %p#is-open
             %i.glyphicon.glyphicon-time
             Servicio las 24 Horas
-      %nav.fixed.top.right.navigation.white-text#navigation
+      %nav.fixed.top.right.navigation.white-text
+      #navigation
         -menu = ["Home", "Inicio", "Galeria", "Contacto", "Como llegar"]
         %ul.list-inline
           -menu.each do |item|
             %li
               %a{}= item
       .absolute.medium.black.large-padding.bottom.white-text.full-width
-      #descrption
-        .row.middle-x
+      #description
+        .row.middle-x.center-xs
           .col-xs-7.col-sm-6.white-text.medium
             Atencion y servicio de excelente calidad
-          .col-xs
+          .col-xs.hidden 
             .box
               %nav.text-right.navigation
                 %ul.list-inline
